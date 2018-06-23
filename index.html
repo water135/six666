@@ -11,13 +11,13 @@
 			ul{
 				width: 200px;
 				height: 200px;
-				border: solid 1px black;
-				box-sizing: border-box;
+				/*border: solid 1px black;
+				box-sizing: border-box;*/
 				margin: 300px auto;
 				position: relative;
 				transform-style:preserve-3d ;
 				transform: rotateX(-45deg) rotateY(-45deg) ;
-				transition: transform 15s linear ;
+				transition: transform 5s linear ;
 			}
 			li{
 				width: 200px;
@@ -55,18 +55,26 @@
 				transform: translateY(100px) rotateX(-90deg);
 			}
 			ul:hover{
-				transform: rotateX(90deg) rotateY(3600deg) ;
+				transform: rotateX(90deg) rotateY(720deg) ;
+			}
+			ul li .inner{
+				display: block;
+				font-size: 20px;
+				margin-top: -150px;
+			}
+			ul li .external{
+				font-size: 18px;
 			}
 		</style>
 	</head>
 	<body>
 		<ul>
-			<li>1</li>
-			<li>2</li>
-			<li>3</li>
-			<li>4</li>
-			<li>5</li>
-			<li>666</li>
+			<li>1<span class="inner">期末未知</span></li>
+			<li>2<span class="inner">期末未知</span></li>
+			<li>3<span class="inner">期末挂了1科科</span></li>
+			<li>4<span class="inner">期末挂了2科科</span></li>
+			<li>5<span class="inner">期末未知</span></li>
+			<li>666<span class="inner">你最棒</span><span class=" external">期末全过且优秀</span></li>
 		</ul>
 		
 	</body>
